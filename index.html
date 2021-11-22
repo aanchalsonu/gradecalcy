@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="main">
+        <form action="#">
+            <div id="line"> </div>
+            <div class="maths">
+                <input type="text" id="maths" placeholder="Maths">
+            </div>
+            <div class="datastructure">
+                <input type="text" id="datastructure" placeholder="Data Structure">
+            </div>
+            <div class="ade">
+                <input type="text" id="ade" placeholder="Analog and Digital Electronics">
+            </div>
+            <div class="se">
+                <input type="text" id="se" placeholder="Software Engineering">
+            </div>
+            <div class="dms">
+                <input type="text" id="dms" placeholder="Discrete Mathematical Structure">
+            </div>
+            <div class="adel">
+                <input type="text" id="adel" placeholder="ADE Lab">
+            </div>
+            <div class="dsl">
+                <input type="text" id="dsl" placeholder="DS Lab">
+            </div>
+            <div class="cons">
+                <input type="text" id="cons" placeholder="CPP">
+            </div>
+            <div class="btn">
+                <input type="button" id="btn" value="Show CGPA" onclick="click()">
+            </div>
+
+
+        </form>
+        <div id="sent">CGPA<br>Calculator</div>
+    </div>
+    <script>
+        const click = () => {
+            let maths = document.querySelector("#maths");
+            let ade = document.querySelector("#ade");
+            let ds = document.querySelector("#datastructure");
+            let se = document.querySelector("#se");
+            let dms = document.querySelector("#dms");
+            // let co = document.querySelector("#co");
+            let button = document.querySelector(".btn");
+            // let sgpa = document.querySelector(".sgpa")
+            let total;
+
+            button.addEventListener("click", (e) => {
+                e.preventDefault();
+                total = Number(maths.value) + Number(ade.value) + Number(ds.value) + Number(se.value) + Number(dms.value) + Number(co.value);
+                sgpa.innerHTML = total / 6;
+                console.log(total);
+            })
+            // let math = document.getElementById('maths').value;
+            // console.log(math);
+            // document.getElementById('alert').innerHTML= 'The sum is :'+ math;
+            // let ds = document.getElementById(datastructure).value;
+            // let ad = document.getElementById(ade).value;
+            // let softwaree = document.getElementById(se).value;
+            // let dms = document.getElementById(dms).value;
+            // let adel = document.getElementById(adel).value;
+            // let dsl = document.getElementById(dsl).value;
+            // let cons = document.getElementById(cons).value;
+
+            // let total = parcelfloat(math) + parcelfloat(ds) + parcelfloat(ad) + parcelfloat(softwaree) + parcelfloat(dms) + parcelfloat(adel) + parcelfloat(dsl)+ parcelfloat(cons) ;
+
+        }
+    </script>
+</body>
+
+</html>

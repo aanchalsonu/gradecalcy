@@ -1,0 +1,100 @@
+
+        html{
+            height: 100px;
+            
+        }     
+        body{
+            height: 100px;
+            background: white;
+            color: black;
+        }
+        .main{
+            font-size: 58px;
+            font-style: oblique;
+            /* border: 2px solid black; */
+            padding: 0px 0px;
+            margin: 118px 350px;
+            padding-top: -8px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+       
+
+        ul{
+            font-size: 40px;
+            display: flex;
+            margin: -450px -7px;
+            padding: 129px 4px;
+            padding-bottom: 0px;
+            padding-top: 129px;
+            border: 0px solid white;
+            background-color: black;
+            color: white;
+        }
+        .item{
+           
+            list-style: none;
+            margin: 26px 31px;
+            padding: 6px 19px;
+            font-size: 30px;
+            background-color: black;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            /* text-decoration: underline; */
+        }
+        a:hover{
+            color: rgb(75, 74, 74);
+        }
+        a:active{
+            color: rgb(75 74 74);
+        }
+        .img{
+            padding: 0px 0px;
+            position: relative;
+            top: auto;
+            z-index: 1;
+            height: 421px;
+            width: 335px;
+            margin: 585px 1087px;
+            float: left;
+        }
+       
+        .intro{
+            /* border: 2px solid black; */
+            padding: 24px 50px;
+            margin: 559px 64px;
+            /* margin: auto; */
+            position: relative;
+            top: 0px;
+            z-index: 1;
+            font-size: 22px;
+            color: black;
+            float: left;
+            margin-bottom: 0px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        }
+        .footer{
+            font-size: 25px; 
+            border: 2px solid black;
+            margin: 959px -6px;
+            padding: 101px 15px;
+            padding-left: 61px;
+            background-color: black;
+            color: white;
+            margin-bottom: 653px;
+            margin-top: 984px;
+            border-bottom-width: 0px;
+            padding-top: 119px;
+        }
+        table{
+            column-gap: 30px;
+            margin: 20px 20px;
+        }
+        td{
+            font-size: 22px;
+            /* border: 2px solid white; */
+            padding: 5px 86px;
+        }
